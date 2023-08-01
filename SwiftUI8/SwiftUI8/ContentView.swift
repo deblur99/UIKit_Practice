@@ -23,8 +23,8 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .foregroundColor(foregroundColor)
                         .background(backgroundColor)
-                    // contextMenu: 꾹 눌렀을 때 나오는 메뉴
-                    // Text, Button이 올 수 있다.
+                        // contextMenu: 꾹 눌렀을 때 나오는 메뉴
+                        // Text, Button이 올 수 있다.
                         .contextMenu {
                             // contextMenu 내에서도 HStack으로 따로 묶을 필요가 없다.
                             Text("텍스트")

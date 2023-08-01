@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Localization
+
+  Created by 한현민 on 2023/07/31.
+  
+*/
+
+"My name is %@" = "저의 이름은 %@입니다.";
+"Hello %@!" = "%@님 안녕하세요!";
