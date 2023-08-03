@@ -10,15 +10,16 @@
 import SwiftUI
 
 struct DetailView: View {
-    let scrum: DailyScrum
+    @State var scrum: DailyScrum
     
+    @State private var editingScrum = DailyScrum.emptyScrum
     @State private var isPresentingEditView = false
 
     var body: some View {
         List {
             Section("Meeting Info") {
                 NavigationLink {
-                    MeetingView()
+                    MeetingView(scrum: $scrum)
                 } label: {
                     // Label 이거하고
                     Label("Start Meeting", systemImage: "timer")
@@ -51,16 +52,31 @@ struct DetailView: View {
                     Label(attendee.name, systemImage: "person")
                 }
             }
+            
+            Section("History") {
+                if scrum.history.isEmpty {
+                    Label("No meetings yet", systemImage: "calendar.badge.exclamationmark")
+                } else {
+                    ForEach(scrum.history) { history in
+                        HistoryView(history: history)
+                    }
+                }
+            }
         }
         .navigationTitle(scrum.title)
+        // toolbar의 버튼을 누르면 sheet가 올라오는데,
+        // 이때 편집중인 인스턴스가 지정된다.
         .toolbar {
             Button("Edit") {
                 isPresentingEditView = true
+                // toolbar 열면 편집중인 scrum 넣고
+                editingScrum = scrum
             }
         }
         .sheet(isPresented: $isPresentingEditView) {
             NavigationStack {
-                DetailEditView()
+                // sheet 열리면서 DetailEditView에 editingScrum이 들어간다.
+                DetailEditView(scrum: $editingScrum)
                     .navigationTitle(scrum.title)
                     .toolbar {
                         ToolbarItem(placement: .cancellationAction) {
@@ -72,6 +88,8 @@ struct DetailView: View {
                         ToolbarItem(placement: .confirmationAction) {
                             Button("Done") {
                                 isPresentingEditView = false
+                                // 수정이 완료되면 sheet가 닫히며 editingScrum의 상태값이 scrum에 적용된다.
+                                scrum = editingScrum
                             }
                         }
                     }

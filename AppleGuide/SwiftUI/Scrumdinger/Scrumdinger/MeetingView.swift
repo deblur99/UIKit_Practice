@@ -6,52 +6,59 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct MeetingView: View {
-    @State private var value: Double = 10.0
+    @Binding var scrum: DailyScrum
+    @StateObject var scrumTimer = ScrumTimer()
+    
+    private var player: AVPlayer {
+        AVPlayer.sharedDingPlayer
+    }
     
     var body: some View {
-        VStack {
-            ProgressView(value: value, total: 100.0)
+        ZStack {
+            RoundedRectangle(cornerRadius: 16.0)
+                .fill(scrum.theme.mainColor)
             
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("Seconds Elapsed")
-                        .font(.caption)
-                    Label("300", systemImage: "hourglass.tophalf.fill")
-                }
+            VStack {
+                MeetingHeaderView(secondsElapsed: scrumTimer.secondsElapsed, secondsRemaining: scrumTimer.secondsRemaining, theme: scrum.theme)
                 
-                Spacer()
+                MeetingTimerView(speakers: scrumTimer.speakers, theme: scrum.theme)
                 
-                VStack(alignment: .trailing) {
-                    Text("Seconds Remaining")
-                        .font(.caption)
-                    Label("600", systemImage: "hourglass.bottomhalf.fill")
-                }
+                MeetingFooterView(speakers: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
             }
-            .accessibilityElement(children: .ignore)
-            .accessibilityLabel("Time remaining")
-            .accessibilityValue("10 minutes")
-            
-            // strokeBorder를 넣어 화면 전체의 여백을 확보한다.
-            Circle()
-                .strokeBorder(lineWidth: 24)
-            
-            HStack {
-                Text("Speaker 1 of 3")
-                Spacer()
-                Button {} label: {
-                    Image(systemName: "forward.fill")
-                }
-                .accessibilityLabel("Next speaker")
+            .padding()
+            .foregroundColor(scrum.theme.accentColor)
+            // 화면에 보여질 때 실행되는 부분
+            .onAppear {
+                startScrum()
             }
+            .onDisappear {
+                endScrum()
+            }
+            .navigationBarTitleDisplayMode(.inline)
+        } 
+    }
+    
+    private func startScrum() {
+        scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+        scrumTimer.speakerChangedAction = {
+            player.seek(to: .zero)
+            player.play()
         }
-        .padding()
+        scrumTimer.startScrum()
+    }
+    
+    private func endScrum() {
+        scrumTimer.stopScrum()
+        let newHistory = History(attendees: scrum.attendees)
+        scrum.history.insert(newHistory, at: 0)
     }
 }
 
 struct MeetingView_Previews: PreviewProvider {
     static var previews: some View {
-        MeetingView()
+        MeetingView(scrum: .constant(DailyScrum.sampleData[0]))
     }
 }

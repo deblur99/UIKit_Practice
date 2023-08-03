@@ -7,7 +7,7 @@
 
 import SwiftUI // 데이터 모델에서 Color 열거형을 쓰기 위해 import
 
-enum Theme: String {
+enum Theme: String, Identifiable, CaseIterable, Codable {
     case bubblegum
     case buttercup
     case indigo
@@ -34,5 +34,13 @@ enum Theme: String {
     
     var mainColor: Color {
         Color(rawValue)
+    }
+    
+    var name: String {
+        rawValue.capitalized
+    }
+    
+    var id: String {
+        name
     }
 }

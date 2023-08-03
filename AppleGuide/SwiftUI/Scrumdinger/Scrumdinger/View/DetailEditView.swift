@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DetailEditView: View {
-    @State private var scrum = DailyScrum.emptyScrum
+    @Binding var scrum: DailyScrum
     @State private var newAttendeeName = ""
     
     var body: some View {
@@ -27,6 +27,8 @@ struct DetailEditView: View {
                     Text("\(scrum.lengthInMinutes) minutes")
                         .accessibilityHidden(true)
                 }
+                
+                ThemePicker(selection: $scrum.theme)
             }
             
             Section("Attendees") {
@@ -40,6 +42,7 @@ struct DetailEditView: View {
                 HStack {
                     TextField("New Attendee", text: $newAttendeeName)
                     Button {
+                        // 천천히 내려가는 애니메이션이 적용된다.
                         withAnimation {
                             let attendee = DailyScrum.Attendee(name: newAttendeeName)
                             scrum.attendees.append(attendee)
@@ -59,6 +62,6 @@ struct DetailEditView: View {
 
 struct DetailEditView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailEditView()
+        DetailEditView(scrum: .constant(DailyScrum.sampleData[0]))
     }
 }
