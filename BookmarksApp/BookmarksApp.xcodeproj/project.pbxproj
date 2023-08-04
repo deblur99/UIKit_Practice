@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61492D972A7C94B30088C8F7 /* BookmarksAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61492D962A7C94B30088C8F7 /* BookmarksAppApp.swift */; };
+		61492D992A7C94B30088C8F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61492D982A7C94B30088C8F7 /* ContentView.swift */; };
+		61492D9B2A7C94B50088C8F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61492D9A2A7C94B50088C8F7 /* Assets.xcassets */; };
+		61492D9E2A7C94B50088C8F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61492D9D2A7C94B50088C8F7 /* Preview Assets.xcassets */; };
+		61492DA82A7C94B50088C8F7 /* BookmarksAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61492DA72A7C94B50088C8F7 /* BookmarksAppTests.swift */; };
+		61492DB22A7C94B50088C8F7 /* BookmarksAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61492DB12A7C94B50088C8F7 /* BookmarksAppUITests.swift */; };
+		61492DB42A7C94B50088C8F7 /* BookmarksAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61492DB32A7C94B50088C8F7 /* BookmarksAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61492DA42A7C94B50088C8F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61492D8B2A7C94B30088C8F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61492D922A7C94B30088C8F7;
+			remoteInfo = BookmarksApp;
+		};
+		61492DAE2A7C94B50088C8F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61492D8B2A7C94B30088C8F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61492D922A7C94B30088C8F7;
+			remoteInfo = BookmarksApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		61492D932A7C94B30088C8F7 /* BookmarksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookmarksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61492D962A7C94B30088C8F7 /* BookmarksAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksAppApp.swift; sourceTree = "<group>"; };
+		61492D982A7C94B30088C8F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		61492D9A2A7C94B50088C8F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61492D9D2A7C94B50088C8F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		61492DA32A7C94B50088C8F7 /* BookmarksAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookmarksAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61492DA72A7C94B50088C8F7 /* BookmarksAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksAppTests.swift; sourceTree = "<group>"; };
+		61492DAD2A7C94B50088C8F7 /* BookmarksAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookmarksAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61492DB12A7C94B50088C8F7 /* BookmarksAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksAppUITests.swift; sourceTree = "<group>"; };
+		61492DB32A7C94B50088C8F7 /* BookmarksAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61492D902A7C94B30088C8F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61492DA02A7C94B50088C8F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61492DAA2A7C94B50088C8F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61492D8A2A7C94B30088C8F7 = {
+			isa = PBXGroup;
+			children = (
+				61492D952A7C94B30088C8F7 /* BookmarksApp */,
+				61492DA62A7C94B50088C8F7 /* BookmarksAppTests */,
+				61492DB02A7C94B50088C8F7 /* BookmarksAppUITests */,
+				61492D942A7C94B30088C8F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61492D942A7C94B30088C8F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61492D932A7C94B30088C8F7 /* BookmarksApp.app */,
+				61492DA32A7C94B50088C8F7 /* BookmarksAppTests.xctest */,
+				61492DAD2A7C94B50088C8F7 /* BookmarksAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61492D952A7C94B30088C8F7 /* BookmarksApp */ = {
+			isa = PBXGroup;
+			children = (
+				61492D962A7C94B30088C8F7 /* BookmarksAppApp.swift */,
+				61492D982A7C94B30088C8F7 /* ContentView.swift */,
+				61492D9A2A7C94B50088C8F7 /* Assets.xcassets */,
+				61492D9C2A7C94B50088C8F7 /* Preview Content */,
+			);
+			path = BookmarksApp;
+			sourceTree = "<group>";
+		};
+		61492D9C2A7C94B50088C8F7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				61492D9D2A7C94B50088C8F7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		61492DA62A7C94B50088C8F7 /* BookmarksAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				61492DA72A7C94B50088C8F7 /* BookmarksAppTests.swift */,
+			);
+			path = BookmarksAppTests;
+			sourceTree = "<group>";
+		};
+		61492DB02A7C94B50088C8F7 /* BookmarksAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				61492DB12A7C94B50088C8F7 /* BookmarksAppUITests.swift */,
+				61492DB32A7C94B50088C8F7 /* BookmarksAppUITestsLaunchTests.swift */,
+			);
+			path = BookmarksAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61492D922A7C94B30088C8F7 /* BookmarksApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61492DB72A7C94B50088C8F7 /* Build configuration list for PBXNativeTarget "BookmarksApp" */;
+			buildPhases = (
+				61492D8F2A7C94B30088C8F7 /* Sources */,
+				61492D902A7C94B30088C8F7 /* Frameworks */,
+				61492D912A7C94B30088C8F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookmarksApp;
+			productName = BookmarksApp;
+			productReference = 61492D932A7C94B30088C8F7 /* BookmarksApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61492DA22A7C94B50088C8F7 /* BookmarksAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61492DBA2A7C94B50088C8F7 /* Build configuration list for PBXNativeTarget "BookmarksAppTests" */;
+			buildPhases = (
+				61492D9F2A7C94B50088C8F7 /* Sources */,
+				61492DA02A7C94B50088C8F7 /* Frameworks */,
+				61492DA12A7C94B50088C8F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61492DA52A7C94B50088C8F7 /* PBXTargetDependency */,
+			);
+			name = BookmarksAppTests;
+			productName = BookmarksAppTests;
+			productReference = 61492DA32A7C94B50088C8F7 /* BookmarksAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		61492DAC2A7C94B50088C8F7 /* BookmarksAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61492DBD2A7C94B50088C8F7 /* Build configuration list for PBXNativeTarget "BookmarksAppUITests" */;
+			buildPhases = (
+				61492DA92A7C94B50088C8F7 /* Sources */,
+				61492DAA2A7C94B50088C8F7 /* Frameworks */,
+				61492DAB2A7C94B50088C8F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61492DAF2A7C94B50088C8F7 /* PBXTargetDependency */,
+			);
+			name = BookmarksAppUITests;
+			productName = BookmarksAppUITests;
+			productReference = 61492DAD2A7C94B50088C8F7 /* BookmarksAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61492D8B2A7C94B30088C8F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					61492D922A7C94B30088C8F7 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					61492DA22A7C94B50088C8F7 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 61492D922A7C94B30088C8F7;
+					};
+					61492DAC2A7C94B50088C8F7 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 61492D922A7C94B30088C8F7;
+					};
+				};
+			};
+			buildConfigurationList = 61492D8E2A7C94B30088C8F7 /* Build configuration list for PBXProject "BookmarksApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61492D8A2A7C94B30088C8F7;
+			productRefGroup = 61492D942A7C94B30088C8F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61492D922A7C94B30088C8F7 /* BookmarksApp */,
+				61492DA22A7C94B50088C8F7 /* BookmarksAppTests */,
+				61492DAC2A7C94B50088C8F7 /* BookmarksAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61492D912A7C94B30088C8F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61492D9E2A7C94B50088C8F7 /* Preview Assets.xcassets in Resources */,
+				61492D9B2A7C94B50088C8F7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61492DA12A7C94B50088C8F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61492DAB2A7C94B50088C8F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61492D8F2A7C94B30088C8F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61492D992A7C94B30088C8F7 /* ContentView.swift in Sources */,
+				61492D972A7C94B30088C8F7 /* BookmarksAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61492D9F2A7C94B50088C8F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61492DA82A7C94B50088C8F7 /* BookmarksAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61492DA92A7C94B50088C8F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61492DB42A7C94B50088C8F7 /* BookmarksAppUITestsLaunchTests.swift in Sources */,
+				61492DB22A7C94B50088C8F7 /* BookmarksAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61492DA52A7C94B50088C8F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61492D922A7C94B30088C8F7 /* BookmarksApp */;
+			targetProxy = 61492DA42A7C94B50088C8F7 /* PBXContainerItemProxy */;
+		};
+		61492DAF2A7C94B50088C8F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61492D922A7C94B30088C8F7 /* BookmarksApp */;
+			targetProxy = 61492DAE2A7C94B50088C8F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		61492DB52A7C94B50088C8F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61492DB62A7C94B50088C8F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61492DB82A7C94B50088C8F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BookmarksApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deblur.BookmarksApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61492DB92A7C94B50088C8F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BookmarksApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deblur.BookmarksApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		61492DBB2A7C94B50088C8F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deblur.BookmarksAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookmarksApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BookmarksApp";
+			};
+			name = Debug;
+		};
+		61492DBC2A7C94B50088C8F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deblur.BookmarksAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookmarksApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BookmarksApp";
+			};
+			name = Release;
+		};
+		61492DBE2A7C94B50088C8F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deblur.BookmarksAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BookmarksApp;
+			};
+			name = Debug;
+		};
+		61492DBF2A7C94B50088C8F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deblur.BookmarksAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BookmarksApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61492D8E2A7C94B30088C8F7 /* Build configuration list for PBXProject "BookmarksApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61492DB52A7C94B50088C8F7 /* Debug */,
+				61492DB62A7C94B50088C8F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61492DB72A7C94B50088C8F7 /* Build configuration list for PBXNativeTarget "BookmarksApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61492DB82A7C94B50088C8F7 /* Debug */,
+				61492DB92A7C94B50088C8F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61492DBA2A7C94B50088C8F7 /* Build configuration list for PBXNativeTarget "BookmarksAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61492DBB2A7C94B50088C8F7 /* Debug */,
+				61492DBC2A7C94B50088C8F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61492DBD2A7C94B50088C8F7 /* Build configuration list for PBXNativeTarget "BookmarksAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61492DBE2A7C94B50088C8F7 /* Debug */,
+				61492DBF2A7C94B50088C8F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61492D8B2A7C94B30088C8F7 /* Project object */;
+}
