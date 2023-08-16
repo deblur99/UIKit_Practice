@@ -13,6 +13,17 @@ struct ContentView: View {
     
     @State private var isLoaded: Bool = false
     @State var text: String = ""
+    @State var searchText: String = ""
+    
+    var searchMemos: [Memo] {
+        if searchText.isEmpty {
+            return memoStore.memos
+        } else {
+            return memoStore.memos.filter { memo in
+                memo.text.contains(searchText)
+            }
+        }
+    }
     
     let databaseRef = Database.database().reference()
     
@@ -27,7 +38,7 @@ struct ContentView: View {
             NavigationStack {
                 VStack {
                     List {
-                        ForEach(memoStore.memos) { memo in
+                        ForEach(searchMemos) { memo in
                             Text(memo.text)
                         }
                         // perform: (IndexSet) -> Void
@@ -61,6 +72,7 @@ struct ContentView: View {
                     }
                 }
             }
+            .searchable(text: $searchText, prompt: "메모 검색...")
         }
     }
     
