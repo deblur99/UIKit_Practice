@@ -20,7 +20,7 @@ struct ContentView: View {
         if !isLoaded {
             ProgressView()
                 .task {
-                    await memoStore.importMemo()
+                    memoStore.fetchMemo()
                     isLoaded.toggle()
                 }
         } else {
@@ -47,7 +47,8 @@ struct ContentView: View {
                             text = ""
                             
                             Task {
-                                await memoStore.exportMemo()
+                                memoStore.fetchMemo()
+//                                await memoStore.exportMemo()
                             }
                         }
                     }
@@ -56,7 +57,7 @@ struct ContentView: View {
                 .navigationTitle("Memo")
                 .refreshable {
                     Task {
-                        await memoStore.importMemo()
+                        memoStore.fetchMemo()
                     }
                 }
             }

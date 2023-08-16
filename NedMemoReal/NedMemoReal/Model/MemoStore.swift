@@ -11,6 +11,31 @@ import Foundation
 @MainActor
 class MemoStore: ObservableObject {
     @Published var memos: [Memo] = Memo.sampleArray
+    
+    // Note: Realtime Database는 async로 가져오는데
+    // Firestore는 sync로 가져옴에 유의한다.
+    
+    func fetchMemo() {
+        Firestore.firestore().collection("Memo").getDocuments { (DataSnapshot, error) in
+            if let DataSnapshot {
+                var savedMemoArray: [Memo] = []
+                
+                for document in DataSnapshot.documents {
+                    let id: String = document.documentID
+                    
+                    let docData = document.data()
+                    let text: String = docData["text"] as? String ?? ""
+                    
+                    let memo: Memo = .init(id: id, text: text)
+                    savedMemoArray.append(memo)
+                }
+                
+                DispatchQueue.main.async {
+                    self.memos = savedMemoArray
+                }
+            }
+        }
+    }
 
     func importMemo() async {
 //        if let savedMemoData = UserDefaults.standard.object(forKey: "memo") as? Data {
@@ -56,10 +81,39 @@ class MemoStore: ObservableObject {
 
     func addMemo(memo: Memo) {
         memos.append(memo)
+        Task {
+            do {
+                try await Firestore.firestore().collection("Memo")
+                    .document(memo.id)
+                    .setData(["text": memo.text])
+            } catch {
+                debugPrint("error")
+            }
+            await exportMemo()
+        }
     }
 
     // (IndexSet) -> Void
     func removeMemo(at offsets: IndexSet) {
-        memos.remove(atOffsets: offsets)
+        for offset in offsets {
+            debugPrint(offset)
+            let memo = memos[offset]
+            debugPrint(memo)
+            
+            Task {
+                do {
+                    try await Firestore.firestore().collection("Memo")
+                        .document(memo.id)
+                        .delete()   // 특정된 문서 자체를 삭제
+                } catch {
+                    debugPrint("error")
+                }
+            }
+            
+            memos.remove(at: offset)
+        }
+        
+//        memos.remove(atOffsets: offsets)
+        // await exportMemo()
     }
 }
